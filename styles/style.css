@@ -4,3 +4,14 @@ html {
     box-sizing: border-box;
     background-color: #b5c2c7;
 }
+
+.top {
+    margin-top: 10%;
+    width: 100%;
+    padding: 30px;
+}
+
+.card {
+    border-right: none!important;
+    padding: 0.5rem;
+}
