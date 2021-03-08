@@ -12,7 +12,7 @@ html {
 }
 
 .top {
-    margin-top: 10%;
+    margin-top: 8%;
     padding: 1.2rem;
     background-color: #a24f5e;
 }
@@ -25,7 +25,7 @@ h3 {
 /* Card Styling */
 
 .top .card {
-    width: 18rem;
+    width: 20rem;
     border: none;
     border-radius: 15px!important;
     transition: all .3s ease 0;
@@ -51,7 +51,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
-.resize {
+.shape {
     /* Card Corner Resize */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -81,13 +81,26 @@ h3 {
 
 /* Adding Space on phone */
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
     .top {
         padding: 0rem;
     }
-    .card {
+    .top .card {
+        margin: 1rem 0 1.5rem 0;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        padding: 0rem;
+    }
+    .top .card {
         margin-top: 1rem;
-        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -101,6 +114,9 @@ h3 {
     display: flex;
 }
 
+
+/* Discount Tab */
+
 .discount {
     padding: .2rem;
     background-color: red;
@@ -109,6 +125,9 @@ h3 {
     color: white;
     border-radius: 5px;
 }
+
+
+/* Group Items */
 
 .group {
     display: flex;
@@ -131,10 +150,3 @@ h3 {
     border: none;
     font-weight: 600;
 }
-
-
-/* .card-body .add_btn:hover {
-    transition: all 200ms ease-in-out;
-    color: white;
-    background: #a24f5e;
-} */
