@@ -51,7 +51,7 @@ html {
     /* Card Corner Resize */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dfdbd8;
     opacity: 0.9;
 }
 
@@ -108,4 +108,23 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+/* Add Button */
+
+.card-body .add_btn {
+    margin-top: 1.2em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: black;
+    border-radius: 10px;
+    border: none;
+}
+
+.card-body .add_btn:hover {
+    transition: all 200ms ease-in-out;
+    color: white;
+    background: #a24f5e;
 }
